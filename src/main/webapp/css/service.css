@@ -1,0 +1,116 @@
+
+    .booking-wrapper {
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+      margin:auto;
+    }
+
+    .booking-card {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    }
+
+    .booking-card h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .form-row input,
+    .form-row select {
+      flex: 1;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[type="date"] {
+      background-color: #ffffff;
+      border: 1px solid #444;
+      color: #000000;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s ease, background 0.3s ease;
+    }
+
+    .appointment-block label {
+      font-weight: 500;
+      display: block;
+      margin: 10px 0 6px;
+      color: #444;
+    }
+
+    .time-slots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .slot {
+      padding: 10px 15px;
+      border: 1px solid #000000;
+      background: white;
+      color: #000000;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .slot.selected {
+      background: #171717;
+      color: white;
+    }
+
+    .slot:hover {
+      background: #000000;
+      color: white;
+    }
+
+    .submit-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #000000;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        flex-direction: column;
+      }
+
+      .time-slots {
+        justify-content: space-between;
+      }
+
+      .slot {
+        flex: 1 1 40%;
+        text-align: center;
+      }

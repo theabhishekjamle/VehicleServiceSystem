@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="sell.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f4f4f4;
+          padding: 20px;
+        }
+
+        .sellerBox {
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 30px;
+          width: 400px;
+          margin: auto;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        input[type="text"], input[type="file"] {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        .submit {
+          background-color: #e50914;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .submit:hover {
+          background-color: #c10812;
+        }
+
+        .fa-heart {
+          font-size: 20px;
+          color: red;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+        }
+
+        p a {
+          text-decoration: none;
+          color: #e50914;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sellerBox">
+    <form action="sell" method="post" enctype="multipart/form-data">
+        <label>
+            Select Image
+            <i class="fa-regular fa-heart" id="favt" onclick="addToFavt()" value="0"></i>
+
+        </label>
+        <input type="file" name="image" required>
+        <input type="text" name="carname" placeholder="Enter Car Name" class="text" required>
+        <input type="text" name="carmodel" placeholder="Enter Model" class="text" required>
+        <input type="text" name="price" placeholder="Enter Selling Price" class="text" required>
+
+        <p><a href="#">View Seller Details</a></p>
+
+        <input type="text" name="phone" placeholder="Enter Phone" required>
+
+        <div class="bt">
+            <input type="submit" class="submit" value="List Your Car">
+        </div>
+    </form>
+</div>
+
+<script>
+    function addToFavt() {
+      boo
+
+    }
+</script>
+
+</body>
+</html>
